@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Management | Rogem Talisic</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 40px 6%;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .label {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .intro {
+            color: #94a3b8;
+            max-width: 800px;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #111f33;
+            border: 1px solid #22344d;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .content-card {
+            background: #0d1b2e;
+            border: 1px solid #22344d;
+            border-radius: 14px;
+            padding: 22px;
+            transition: 0.3s ease;
+        }
+
+        .content-card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+        }
+
+        .platform {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .content-card h3 {
+            margin: 8px 0 12px;
+        }
+
+        .content-card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .caption {
+            margin-top: 15px;
+            padding: 15px;
+            background: #111f33;
+            border-radius: 10px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calendar th,
+        .calendar td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #22344d;
+        }
+
+        .calendar th {
+            color: #38bdf8;
+            background: #0d1b2e;
+        }
+
+        .calendar td {
+            color: #cbd5e1;
+        }
+
+        .status {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .workflow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .step {
+            background: #0d1b2e;
+            border: 1px solid #22344d;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #38bdf8;
+            color: #06111f;
+
+            font-weight: bold;
+        }
+
+        .step h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 8px 14px;
+            border: 1px solid #38bdf8;
+            border-radius: 20px;
+            color: #38bdf8;
+            font-size: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 800px) {
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            body {
+                padding: 25px 5%;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr;
+            }
+
+            .calendar {
+                min-width: 650px;
+            }
+
+            .table-wrapper {
+                overflow-x: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <a href="index.html" class="back">
+        ← Back to Portfolio
+    </a>
+
+
+    <p class="label">
+        SAMPLE PROJECT
+    </p>
+
+
+    <h1>
+        Social Media Management
+    </h1>
+
+
+    <p class="intro">
+
+        A sample social media management workflow
+        demonstrating content planning, caption writing,
+        scheduling, and basic engagement support.
+
+    </p>
+
+
+    <!-- CONTENT PLANNING -->
+
+    <div class="card">
+
+        <h2>
+            Sample Content Plan
+        </h2>
+
+
+        <div class="content-grid">
+
+
+            <div class="content-card">
+
+                <span class="platform">
+                    Facebook
+                </span>
+
+                <h3>
+                    Product Promotion
+                </h3>
+
+                <p>
+                    Create a promotional post highlighting
+                    the product's main benefits and
+                    encouraging customers to inquire.
+                </p>
+
+                <div class="caption">
+
+                    <strong>Sample Caption:</strong><br><br>
+
+                    Looking for a reliable solution for
+                    your everyday needs? Send us a message
+                    to learn more about our available options.
+
+                </div>
+
+            </div>
+
+
+            <div class="content-card">
+
+                <span class="platform">
+                    Facebook
+                </span>
+
+                <h3>
+                    Educational Content
+                </h3>
+
+                <p>
+                    Share useful information that helps
+                    customers understand the product
+                    or service.
+                </p>
+
+                <div class="caption">
+
+                    <strong>Sample Caption:</strong><br><br>
+
+                    Did you know? Choosing the right
+                    product starts with understanding
+                    your specific needs. Here are a few
+                    things to consider before making a decision.
+
+                </div>
+
+            </div>
+
+
+            <div class="content-card">
+
+                <span class="platform">
+                    Facebook
+                </span>
+
+                <h3>
+                    Customer Engagement
+                </h3>
+
+                <p>
+                    Create posts designed to encourage
+                    comments, questions, and interaction.
+                </p>
+
+                <div class="caption">
+
+                    <strong>Sample Caption:</strong><br><br>
+
+                    What feature matters most to you?
+                    Let us know in the comments!
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTENT CALENDAR -->
+
+    <div class="card">
+
+        <h2>
+            Sample Content Calendar
+        </h2>
+
+
+        <div class="table-wrapper">
+
+            <table class="calendar">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Day
+                        </th>
+
+                        <th>
+                            Content
+                        </th>
+
+                        <th>
+                            Platform
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Monday
+                        </td>
+
+                        <td>
+                            Product Promotion
+                        </td>
+
+                        <td>
+                            Facebook
+                        </td>
+
+                        <td class="status">
+                            Planned
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Wednesday
+                        </td>
+
+                        <td>
+                            Educational Post
+                        </td>
+
+                        <td>
+                            Facebook
+                        </td>
+
+                        <td class="status">
+                            Draft
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Friday
+                        </td>
+
+                        <td>
+                            Customer Engagement
+                        </td>
+
+                        <td>
+                            Facebook
+                        </td>
+
+                        <td class="status">
+                            Planned
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- WORKFLOW -->
+
+    <div class="card">
+
+        <h2>
+            Social Media Workflow
+        </h2>
+
+
+        <div class="workflow">
+
+
+            <div class="step">
+
+                <div class="number">
+                    1
+                </div>
+
+                <h3>
+                    Plan
+                </h3>
+
+                <p>
+                    Identify content topics.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    2
+                </div>
+
+                <h3>
+                    Create
+                </h3>
+
+                <p>
+                    Prepare captions and visuals.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    3
+                </div>
+
+                <h3>
+                    Schedule
+                </h3>
+
+                <p>
+                    Prepare posts for publishing.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    4
+                </div>
+
+                <h3>
+                    Engage
+                </h3>
+
+                <p>
+                    Monitor comments and messages.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- SKILLS -->
+
+    <div class="card">
+
+        <h2>
+            Skills Demonstrated
+        </h2>
+
+
+        <div class="skills">
+
+            <span class="skill">
+                Content Planning
+            </span>
+
+            <span class="skill">
+                Caption Writing
+            </span>
+
+            <span class="skill">
+                Social Media Support
+            </span>
+
+            <span class="skill">
+                Content Scheduling
+            </span>
+
+            <span class="skill">
+                Customer Engagement
+            </span>
+
+            <span class="skill">
+                Basic Canva Design
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <p>
+            © 2026 Rogem Talisic | Virtual Assistant
+        </p>
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

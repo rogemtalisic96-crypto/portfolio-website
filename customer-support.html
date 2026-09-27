@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Support Sample | Rogem Talisic</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 40px 6%;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .label {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .intro {
+            color: #94a3b8;
+            max-width: 750px;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #111f33;
+            border: 1px solid #22344d;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .message {
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .customer {
+            background: #172a42;
+            border-left: 4px solid #64748b;
+        }
+
+        .va {
+            background: #0d3348;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .label-small {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .message p {
+            color: #cbd5e1;
+        }
+
+        .workflow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .step {
+            background: #0d1b2e;
+            border: 1px solid #22344d;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #38bdf8;
+            color: #06111f;
+
+            font-weight: bold;
+        }
+
+        .step h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 8px 14px;
+            border: 1px solid #38bdf8;
+            border-radius: 20px;
+            color: #38bdf8;
+            font-size: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 25px 5%;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media (max-width: 450px) {
+
+            .workflow {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <a href="index.html" class="back">
+        ← Back to Portfolio
+    </a>
+
+
+    <p class="label">
+        SAMPLE PROJECT
+    </p>
+
+
+    <h1>
+        Customer Support
+    </h1>
+
+
+    <p class="intro">
+
+        A sample customer support workflow demonstrating
+        professional communication, problem understanding,
+        solution guidance, and follow-up.
+
+    </p>
+
+
+
+    <!-- Conversation -->
+
+    <div class="card">
+
+        <h2>
+            Sample Customer Conversation
+        </h2>
+
+
+        <div class="message customer">
+
+            <div class="label-small">
+                Customer
+            </div>
+
+            <p>
+
+                Hi! I'm interested in your product.
+                Can you please provide more information
+                about the available options and pricing?
+
+            </p>
+
+        </div>
+
+
+        <div class="message va">
+
+            <div class="label-small">
+                Virtual Assistant
+            </div>
+
+            <p>
+
+                Hi! Thank you for reaching out.
+                I'd be happy to assist you. May I know
+                which product you're interested in?
+                Once I have that information, I can provide
+                the available options and pricing.
+
+            </p>
+
+        </div>
+
+
+        <div class="message customer">
+
+            <div class="label-small">
+                Customer
+            </div>
+
+            <p>
+
+                I'm interested in your latest model.
+                I'd also like to know if installment options
+                are available.
+
+            </p>
+
+        </div>
+
+
+        <div class="message va">
+
+            <div class="label-small">
+                Virtual Assistant
+            </div>
+
+            <p>
+
+                Thank you for the information.
+                I can help you check the available
+                installment options. I'll confirm the
+                current details and provide you with
+                the available payment options.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Workflow -->
+
+    <div class="card">
+
+        <h2>
+            Support Workflow
+        </h2>
+
+
+        <div class="workflow">
+
+
+            <div class="step">
+
+                <div class="number">
+                    1
+                </div>
+
+                <h3>
+                    Receive
+                </h3>
+
+                <p>
+                    Receive customer inquiry.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    2
+                </div>
+
+                <h3>
+                    Understand
+                </h3>
+
+                <p>
+                    Identify the customer's needs.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    3
+                </div>
+
+                <h3>
+                    Assist
+                </h3>
+
+                <p>
+                    Provide helpful information.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    4
+                </div>
+
+                <h3>
+                    Follow-up
+                </h3>
+
+                <p>
+                    Follow up when necessary.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Skills -->
+
+    <div class="card">
+
+        <h2>
+            Skills Demonstrated
+        </h2>
+
+
+        <div class="skills">
+
+            <span class="skill">
+                Customer Communication
+            </span>
+
+            <span class="skill">
+                Professional Writing
+            </span>
+
+            <span class="skill">
+                Problem Understanding
+            </span>
+
+            <span class="skill">
+                Customer Follow-up
+            </span>
+
+            <span class="skill">
+                Sales Support
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <p>
+            © 2026 Rogem Talisic | Virtual Assistant
+        </p>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

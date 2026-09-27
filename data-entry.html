@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Data Entry Sample | Rogem Talisic</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 40px 6%;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .label {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .intro {
+            color: #94a3b8;
+            max-width: 800px;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #111f33;
+            border: 1px solid #22344d;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 850px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #22344d;
+        }
+
+        th {
+            color: #38bdf8;
+            background: #0d1b2e;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+
+        .active {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .pending {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+
+        .completed {
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .stat {
+            background: #0d1b2e;
+            border: 1px solid #22344d;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-number {
+            color: #38bdf8;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 8px 14px;
+            border: 1px solid #38bdf8;
+            border-radius: 20px;
+            color: #38bdf8;
+            font-size: 13px;
+        }
+
+        .workflow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .step {
+            background: #0d1b2e;
+            border: 1px solid #22344d;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #38bdf8;
+            color: #06111f;
+
+            font-weight: bold;
+        }
+
+        .step h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 800px) {
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .workflow {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            body {
+                padding: 25px 5%;
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <a href="index.html" class="back">
+        ← Back to Portfolio
+    </a>
+
+
+    <p class="label">
+        SAMPLE PROJECT
+    </p>
+
+
+    <h1>
+        Data Entry & Organization
+    </h1>
+
+
+    <p class="intro">
+
+        A sample data entry workflow demonstrating
+        accurate information organization, record keeping,
+        status tracking, and spreadsheet management.
+
+    </p>
+
+
+
+    <!-- OVERVIEW -->
+
+    <div class="card">
+
+        <h2>
+            Project Overview
+        </h2>
+
+        <p class="description">
+
+            This sample demonstrates how customer or
+            business information can be organized into
+            a structured database for easier tracking
+            and management.
+
+        </p>
+
+
+        <div class="stats">
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    10
+                </div>
+
+                <div class="stat-label">
+                    Records
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    6
+                </div>
+
+                <div class="stat-label">
+                    Fields
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    7
+                </div>
+
+                <div class="stat-label">
+                    Active
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-number">
+                    3
+                </div>
+
+                <div class="stat-label">
+                    Pending
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DATA TABLE -->
+
+    <div class="card">
+
+        <h2>
+            Sample Customer Database
+        </h2>
+
+
+        <p class="description">
+
+            Demo data created for portfolio purposes.
+
+        </p>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            ID
+                        </th>
+
+                        <th>
+                            Name
+                        </th>
+
+                        <th>
+                            Email
+                        </th>
+
+                        <th>
+                            Service
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            001
+                        </td>
+
+                        <td>
+                            Alex Morgan
+                        </td>
+
+                        <td>
+                            alex@example.com
+                        </td>
+
+                        <td>
+                            Consultation
+                        </td>
+
+                        <td>
+                            Sept. 01
+                        </td>
+
+                        <td class="completed">
+                            Completed
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            002
+                        </td>
+
+                        <td>
+                            Jamie Cruz
+                        </td>
+
+                        <td>
+                            jamie@example.com
+                        </td>
+
+                        <td>
+                            Product Inquiry
+                        </td>
+
+                        <td>
+                            Sept. 03
+                        </td>
+
+                        <td class="active">
+                            Active
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            003
+                        </td>
+
+                        <td>
+                            Taylor Smith
+                        </td>
+
+                        <td>
+                            taylor@example.com
+                        </td>
+
+                        <td>
+                            Follow-up
+                        </td>
+
+                        <td>
+                            Sept. 05
+                        </td>
+
+                        <td class="pending">
+                            Pending
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            004
+                        </td>
+
+                        <td>
+                            Jordan Lee
+                        </td>
+
+                        <td>
+                            jordan@example.com
+                        </td>
+
+                        <td>
+                            Consultation
+                        </td>
+
+                        <td>
+                            Sept. 07
+                        </td>
+
+                        <td class="completed">
+                            Completed
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            005
+                        </td>
+
+                        <td>
+                            Casey Brown
+                        </td>
+
+                        <td>
+                            casey@example.com
+                        </td>
+
+                        <td>
+                            Product Inquiry
+                        </td>
+
+                        <td>
+                            Sept. 10
+                        </td>
+
+                        <td class="active">
+                            Active
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            006
+                        </td>
+
+                        <td>
+                            Morgan Reyes
+                        </td>
+
+                        <td>
+                            morgan@example.com
+                        </td>
+
+                        <td>
+                            Follow-up
+                        </td>
+
+                        <td>
+                            Sept. 12
+                        </td>
+
+                        <td class="pending">
+                            Pending
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- WORKFLOW -->
+
+    <div class="card">
+
+        <h2>
+            Data Entry Workflow
+        </h2>
+
+
+        <div class="workflow">
+
+
+            <div class="step">
+
+                <div class="number">
+                    1
+                </div>
+
+                <h3>
+                    Collect
+                </h3>
+
+                <p>
+                    Gather required information.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    2
+                </div>
+
+                <h3>
+                    Enter
+                </h3>
+
+                <p>
+                    Input information accurately.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    3
+                </div>
+
+                <h3>
+                    Organize
+                </h3>
+
+                <p>
+                    Structure and categorize data.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    4
+                </div>
+
+                <h3>
+                    Review
+                </h3>
+
+                <p>
+                    Check information for errors.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SKILLS -->
+
+    <div class="card">
+
+        <h2>
+            Skills Demonstrated
+        </h2>
+
+
+        <div class="skills">
+
+            <span class="skill">
+                Data Entry
+            </span>
+
+            <span class="skill">
+                Spreadsheet Management
+            </span>
+
+            <span class="skill">
+                Data Organization
+            </span>
+
+            <span class="skill">
+                Record Keeping
+            </span>
+
+            <span class="skill">
+                Attention to Detail
+            </span>
+
+            <span class="skill">
+                Data Review
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TOOLS -->
+
+    <div class="card">
+
+        <h2>
+            Tools
+        </h2>
+
+        <p class="description">
+
+            This type of task can be completed using
+            Google Sheets, Microsoft Excel, Google Workspace,
+            and other spreadsheet or database tools.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="footer">
+
+        <p>
+            © 2026 Rogem Talisic | Virtual Assistant
+        </p>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

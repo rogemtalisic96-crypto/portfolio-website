@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sales Follow-up Sample | Rogem Talisic</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 40px 6%;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .label {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .intro {
+            color: #94a3b8;
+            max-width: 800px;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #111f33;
+            border: 1px solid #22344d;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 900px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #22344d;
+        }
+
+        th {
+            color: #38bdf8;
+            background: #0d1b2e;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+
+        .new {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .follow {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+
+        .interested {
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .closed {
+            color: #94a3b8;
+            font-weight: bold;
+        }
+
+        .workflow {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .step {
+            background: #0d1b2e;
+            border: 1px solid #22344d;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #38bdf8;
+            color: #06111f;
+
+            font-weight: bold;
+        }
+
+        .step h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .message {
+            padding: 20px;
+
+            background: #0d1b2e;
+
+            border-left: 4px solid #38bdf8;
+
+            border-radius: 10px;
+
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 8px 14px;
+
+            border: 1px solid #38bdf8;
+
+            border-radius: 20px;
+
+            color: #38bdf8;
+
+            font-size: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 900px) {
+
+            .workflow {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 25px 5%;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <a href="index.html" class="back">
+        ← Back to Portfolio
+    </a>
+
+
+    <p class="label">
+        SAMPLE PROJECT
+    </p>
+
+
+    <h1>
+        Sales Follow-up
+    </h1>
+
+
+    <p class="intro">
+
+        A sample sales follow-up workflow demonstrating
+        how potential customers can be tracked,
+        organized, and followed up professionally.
+
+    </p>
+
+
+
+    <!-- OVERVIEW -->
+
+    <div class="card">
+
+        <h2>
+            Project Overview
+        </h2>
+
+        <p class="description">
+
+            The purpose of this sample is to demonstrate
+            a simple system for tracking prospects,
+            recording follow-up dates, and maintaining
+            communication status.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- LEAD TRACKER -->
+
+    <div class="card">
+
+        <h2>
+            Sample Lead Follow-up Tracker
+        </h2>
+
+        <p class="description">
+
+            Demo information created specifically
+            for portfolio purposes.
+
+        </p>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Lead
+                        </th>
+
+                        <th>
+                            Product / Service
+                        </th>
+
+                        <th>
+                            Last Contact
+                        </th>
+
+                        <th>
+                            Next Follow-up
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Sample Lead A
+                        </td>
+
+                        <td>
+                            Business Service
+                        </td>
+
+                        <td>
+                            Sept. 10
+                        </td>
+
+                        <td>
+                            Sept. 12
+                        </td>
+
+                        <td class="new">
+                            New Lead
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Sample Lead B
+                        </td>
+
+                        <td>
+                            Product Inquiry
+                        </td>
+
+                        <td>
+                            Sept. 11
+                        </td>
+
+                        <td>
+                            Sept. 13
+                        </td>
+
+                        <td class="follow">
+                            Follow-up
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Sample Lead C
+                        </td>
+
+                        <td>
+                            Consultation
+                        </td>
+
+                        <td>
+                            Sept. 12
+                        </td>
+
+                        <td>
+                            Sept. 15
+                        </td>
+
+                        <td class="interested">
+                            Interested
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Sample Lead D
+                        </td>
+
+                        <td>
+                            Business Service
+                        </td>
+
+                        <td>
+                            Sept. 08
+                        </td>
+
+                        <td>
+                            Sept. 14
+                        </td>
+
+                        <td class="closed">
+                            Closed
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SAMPLE MESSAGE -->
+
+    <div class="card">
+
+        <h2>
+            Sample Follow-up Message
+        </h2>
+
+
+        <div class="message">
+
+            Hi! I just wanted to follow up regarding
+            your previous inquiry. I’d be happy to provide
+            additional information or answer any questions
+            you may have. Please let me know how I can assist you.
+
+        </div>
+
+    </div>
+
+
+
+    <!-- WORKFLOW -->
+
+    <div class="card">
+
+        <h2>
+            Follow-up Workflow
+        </h2>
+
+
+        <div class="workflow">
+
+
+            <div class="step">
+
+                <div class="number">
+                    1
+                </div>
+
+                <h3>
+                    Identify
+                </h3>
+
+                <p>
+                    Identify potential leads.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    2
+                </div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Send initial communication.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    3
+                </div>
+
+                <h3>
+                    Record
+                </h3>
+
+                <p>
+                    Record communication details.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    4
+                </div>
+
+                <h3>
+                    Follow-up
+                </h3>
+
+                <p>
+                    Contact the lead again.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">
+                    5
+                </div>
+
+                <h3>
+                    Update
+                </h3>
+
+                <p>
+                    Update the lead status.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SKILLS -->
+
+    <div class="card">
+
+        <h2>
+            Skills Demonstrated
+        </h2>
+
+
+        <div class="skills">
+
+            <span class="skill">
+                Sales Follow-up
+            </span>
+
+            <span class="skill">
+                Customer Communication
+            </span>
+
+            <span class="skill">
+                Lead Tracking
+            </span>
+
+            <span class="skill">
+                Data Organization
+            </span>
+
+            <span class="skill">
+                Professional Writing
+            </span>
+
+            <span class="skill">
+                Customer Relationship Support
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+
+        <p>
+            © 2026 Rogem Talisic | Virtual Assistant
+        </p>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

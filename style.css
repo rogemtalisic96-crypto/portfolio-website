@@ -1,0 +1,648 @@
+/* ========================================
+   ROGEM TALISIC - VA PORTFOLIO
+   COMPLETE WEBSITE STYLE
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #07111f;
+    --bg-light: #0d1b2e;
+    --card: #111f33;
+    --card-hover: #162a43;
+    --blue: #38bdf8;
+    --blue-dark: #0284c7;
+    --white: #ffffff;
+    --text: #cbd5e1;
+    --muted: #94a3b8;
+    --border: #22344d;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+nav {
+    width: 100%;
+    height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(7, 17, 31, 0.96);
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: calc(100vh - 75px);
+
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(14, 116, 144, 0.35),
+            transparent 35%
+        ),
+        var(--bg);
+}
+
+.hero-text {
+    max-width: 680px;
+}
+
+.small-title {
+    color: var(--blue);
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1.05;
+
+    margin-bottom: 12px;
+
+    letter-spacing: -2px;
+}
+
+.hero h2 {
+    color: var(--blue);
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 600px;
+
+    color: var(--text);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 27px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.primary {
+    background: var(--blue);
+
+    color: #06111f;
+
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.15);
+}
+
+.primary:hover {
+    background: #7dd3fc;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3);
+}
+
+.secondary {
+    color: var(--blue);
+
+    border: 1px solid var(--blue);
+
+    background: transparent;
+}
+
+.secondary:hover {
+    background: var(--blue);
+
+    color: #06111f;
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   PROFILE CARD
+======================================== */
+
+.hero-card {
+    width: 350px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background: rgba(17, 31, 51, 0.85);
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(56, 189, 248, 0.5);
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-circle {
+    width: 170px;
+    height: 170px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid var(--blue);
+
+    background: var(--blue);
+
+    box-shadow:
+        0 10px 35px rgba(56, 189, 248, 0.25);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+}
+
+.hero-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: var(--muted);
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
+
+.section {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 110px 8%;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: var(--blue);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+
+    line-height: 1.2;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about-content {
+    max-width: 900px;
+
+    color: var(--text);
+
+    font-size: 17px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    color: var(--white);
+
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+
+
+/* ========================================
+   SERVICES
+======================================== */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.service-card {
+    padding: 32px;
+
+    min-height: 190px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    background: var(--card-hover);
+
+    border-color: var(--blue);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.service-card h3 {
+    color: var(--white);
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   PORTFOLIO
+======================================== */
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.portfolio-card {
+    min-height: 220px;
+
+    padding: 32px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(
+            145deg,
+            #13243a,
+            #0d1728
+        );
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    transition: 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--blue);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-card h3 {
+    color: var(--white);
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    color: var(--muted);
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact {
+    text-align: center;
+
+    max-width: 900px;
+}
+
+.contact > p {
+    color: var(--muted);
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    border-top: 1px solid var(--border);
+
+    background: #050c16;
+}
+
+
+/* ========================================
+   MOBILE / TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 70px 6%;
+
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-card {
+        width: 320px;
+    }
+
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    nav {
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding: 70px 5%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .description {
+        margin: auto;
+
+        font-size: 16px;
+    }
+
+    .buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .hero-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .profile-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .section {
+        padding: 80px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ========================================
+   SMALL PHONES
+======================================== */
+
+@media (max-width: 430px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .small-title {
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .profile-circle {
+        width: 145px;
+        height: 145px;
+    }
+
+}
